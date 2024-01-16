@@ -22,7 +22,9 @@ export function Card() {
       </div>
 
       <div className="linkedinContainer">
-        <span>Linkedin</span>
+        <a href="#" target="_blank">
+          Linkedin
+        </a>
         <hr />
       </div>
     </Wrapper>
