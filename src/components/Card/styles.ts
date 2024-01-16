@@ -1,6 +1,10 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
+interface WrapperProps {
+  color: string
+}
+
+export const Wrapper = styled.div<WrapperProps>`
   width: 400px;
   aspect-ratio: 1/1;
   overflow: hidden;
@@ -21,7 +25,7 @@ export const Wrapper = styled.div`
     font-size: x-large;
     width: 100%;
     height: 30%;
-    background-color: red;
+    background-color: ${(props) => props.color};
 
     .curve {
       position: absolute;
@@ -39,7 +43,7 @@ export const Wrapper = styled.div`
       width: 28%;
       height: 119px;
       transform: translate(262%, 176%) rotate(190deg);
-      background-color: red;
+      background-color: ${(props) => props.color};
     }
 
     .curve::after {
@@ -50,7 +54,7 @@ export const Wrapper = styled.div`
       width: 28%;
       height: 119px;
       transform: translate(-4%, 169%) rotate(94deg);
-      background-color: red;
+      background-color: ${(props) => props.color};
     }
   }
 
@@ -87,7 +91,7 @@ export const Wrapper = styled.div`
       color: white;
 
       span {
-        color: red;
+        color: ${(props) => props.color};
       }
     }
   }
@@ -110,7 +114,7 @@ export const Wrapper = styled.div`
       display: block;
       text-decoration: none;
       width: min-content;
-      background-color: red;
+      background-color: ${(props) => props.color};
       color: white;
       padding: 2px 20px;
       border-radius: 16px;

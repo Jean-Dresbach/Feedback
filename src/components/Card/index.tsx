@@ -1,28 +1,47 @@
 import { Wrapper } from "./styles"
 
-export function Card() {
+interface CardProps {
+  name: string
+  surname: string
+  qualities: string[]
+  color: string
+  linkedin: string
+  image: string
+}
+
+export function Card({
+  name,
+  surname,
+  color,
+  qualities,
+  image,
+  linkedin,
+}: CardProps) {
   return (
-    <Wrapper>
+    <Wrapper color={color}>
       <div className="titleContainer">
         <h2>FEEDBACK</h2>
         <div className="curve"></div>
       </div>
 
       <div className="infoContainer">
-        <div></div>
+        <div>
+          <img src={image} />
+        </div>
         <p>
-          Nome<span> Aqui</span>
+          {name}
+          <span> {surname}</span>
         </p>
       </div>
 
       <div className="feedbackContainer">
-        <span>Frase aqui</span>
-        <span>Frase aqui</span>
-        <span>Frase aqui</span>
+        {qualities.map((i) => (
+          <span key={i}>{i}</span>
+        ))}
       </div>
 
       <div className="linkedinContainer">
-        <a href="#" target="_blank">
+        <a href={linkedin} target="_blank">
           Linkedin
         </a>
         <hr />
