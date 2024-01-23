@@ -17,7 +17,7 @@ export const people: Person[] = [
     id: "jean",
     name: "Jean",
     surname: "Dresbach",
-    qualities: ["Colaborativo", "Raciocinio lógico", "Inteligente"],
+    qualities: ["Colaborativo", "Raciocínio lógico", "Inteligente"],
     linkedin: "www.linkedin.com/in/jean-dresbach-a98a90293",
     image: jeanImg,
   },
