@@ -1,29 +1,26 @@
 import { Wrapper } from "./styles"
 
 interface CardProps {
+  htmlFor: string
+  id: string
   name: string
   surname: string
   qualities: string[]
-  color: string
   linkedin: string
   image: string
 }
 
 export function Card({
+  htmlFor,
+  id,
   name,
   surname,
-  color,
   qualities,
   image,
   linkedin,
 }: CardProps) {
   return (
-    <Wrapper color={color}>
-      <div className="titleContainer">
-        <h2>FEEDBACK</h2>
-        <div className="curve"></div>
-      </div>
-
+    <Wrapper htmlFor={htmlFor} id={id}>
       <div className="infoContainer">
         <div>
           <img src={image} />
