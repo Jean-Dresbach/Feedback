@@ -10,5 +10,6 @@ export default createGlobalStyle`
     body {
         font-family: "Lemon", serif;
         color: white;
+        height: 100vh;
     }
 `
