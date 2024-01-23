@@ -10,6 +10,5 @@ export default createGlobalStyle`
     body {
         font-family: "Lemon", serif;
         color: white;
-        overflow: hidden;
     }
 `
