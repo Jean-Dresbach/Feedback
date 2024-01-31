@@ -4,12 +4,13 @@ export const Wrapper = styled.div`
   width: 100%;
 
   [type="radio"] {
-    visibility: hidden;
+    display: none;
   }
 
   height: 300px;
   position: relative;
   perspective: 1000px;
+  z-index: 99;
   transform-style: preserve-3d;
 
   label {
@@ -32,8 +33,7 @@ export const Wrapper = styled.div`
   #s5:checked ~ #slide3 {
     filter: blur(1.5px);
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-    transform: translate3d(-80%, 0, -200px);
-    -moz-transform: translate3d(-80%, 0, -200px);
+    transform: translate3d(-80%, 0, 0);
   }
 
   #s1:checked ~ #slide5,
@@ -43,8 +43,7 @@ export const Wrapper = styled.div`
   #s5:checked ~ #slide4 {
     filter: blur(0.5px);
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    transform: translate3d(-40%, 0, -100px);
-    -moz-transform: translate3d(-40%, 0, -100px);
+    transform: translate3d(-40%, 0, 100px);
   }
 
   #s1:checked ~ #slide1,
@@ -54,8 +53,7 @@ export const Wrapper = styled.div`
   #s5:checked ~ #slide5 {
     box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3),
       0 11px 7px 0 rgba(0, 0, 0, 0.19);
-    transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 200px);
   }
 
   #s1:checked ~ #slide2,
@@ -65,8 +63,7 @@ export const Wrapper = styled.div`
   #s5:checked ~ #slide1 {
     filter: blur(0.5px);
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    transform: translate3d(40%, 0, -100px);
-    -moz-transform: translate3d(40%, 0, -100px);
+    transform: translate3d(40%, 0, 100px);
   }
 
   #s1:checked ~ #slide3,
@@ -76,8 +73,7 @@ export const Wrapper = styled.div`
   #s5:checked ~ #slide2 {
     filter: blur(1.5px);
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-    transform: translate3d(80%, 0, -200px);
-    -moz-transform: translate3d(80%, 0, -200px);
+    transform: translate3d(80%, 0, 0);
   }
 
   #slide1 {
