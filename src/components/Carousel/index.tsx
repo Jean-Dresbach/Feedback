@@ -36,7 +36,7 @@ export function Carousel() {
           index={index + 1}
         ></Card>
       ))}
-      <label htmlFor="s5" id="slide5">
+      <label htmlFor="s5" id="slide5" onClick={() => handleSlideChange(5)}>
         <span>
           CARROSSEL <br />
           DE FEEDBACKS
