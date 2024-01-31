@@ -8,6 +8,8 @@ interface CardProps {
   qualities: string[]
   linkedin: string
   image: string
+  handleSlideChange: (index: number) => void
+  index: number
 }
 
 export function Card({
@@ -18,9 +20,11 @@ export function Card({
   qualities,
   image,
   linkedin,
+  handleSlideChange,
+  index,
 }: CardProps) {
   return (
-    <Wrapper htmlFor={htmlFor} id={id}>
+    <Wrapper htmlFor={htmlFor} id={id} onClick={() => handleSlideChange(index)}>
       <div className="infoContainer">
         <div>
           <img src={image} />
