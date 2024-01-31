@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
 
   [type="radio"] {
-    display: none;
+    visibility: hidden;
   }
 
   height: 300px;
@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
     right: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
   }
 
   #s1:checked ~ #slide4,

@@ -1,19 +1,8 @@
-// import { useState } from "react"
 import { people } from "../../database"
 import { Card } from "../Card"
 import { Wrapper } from "./styles"
 
 export function Carousel() {
-  // const [activeCarousel, setActiveCarousel] = useState<number>(0)
-
-  // const nextSlide = () => {
-  //   setActiveCarousel((prevIndex) => (prevIndex + 1) % 4)
-  // }
-
-  // const prevSlide = () => {
-  //   setActiveCarousel((prevIndex) => (prevIndex - 1 + 4) % 4)
-  // }
-
   return (
     <Wrapper id="slider">
       <input type="radio" name="slider" id="s1" />
