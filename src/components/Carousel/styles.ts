@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
   height: 300px;
   position: relative;
   perspective: 1000px;
-  z-index: 99;
   transform-style: preserve-3d;
 
   label {
